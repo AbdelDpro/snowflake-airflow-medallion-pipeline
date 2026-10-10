@@ -16,6 +16,7 @@ CREATE FILE FORMAT IF NOT EXISTS FF_CSV
   TYPE = CSV
   PARSE_HEADER = TRUE
   FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+  ERROR_ON_COLUMN_COUNT_MISMATCH = FALSE  -- le fichier a 4 colonnes, la table 6 (colonnes techniques)
   COMMENT = 'Liste des zones TLC';
 
 
